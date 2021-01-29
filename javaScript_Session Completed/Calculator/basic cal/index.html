@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="xyz">Basic calculator</h1>
+    <script type="text/javascript">
+        var val1 =parseInt(prompt("Enter value 1"));
+        console.log(val1);
+        var val2 = parseInt(prompt("Enter val 2"));
+        console.log(val2);
+        var operation = prompt("which operation do u want to carry?");
+        console.log(operation);
+        var ans;
+        switch(operation){
+            case "+":
+                ans = val1+val2;
+                alert(ans);
+                break;
+            case "-":
+                ans = val1-val2;
+                alert(ans);
+                break;
+            case "*":
+                ans = val1*val2;
+                alert(ans);
+                break;
+            case "/":
+                ans = val1/val2;
+                alert(ans);
+                break;
+            default:
+                alert("Invalid");
+        }
+    </script>
+</body>
+</html>
